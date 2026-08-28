@@ -41,25 +41,21 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 
 # Continuando pelo Splunk
 1. *Qual foi o URI mais solicitado?*
-- d
 ![uri](Imagens/uri.png)
 
 2. *Qual clientip fez o maior número de requisições para o URI de destino?*
-- d
 ![ma](Imagens/ma.png)
 
 3. *Quantos endereços IP faziam parte da botnet que atacou o site?*
-- d
 ![bot](Imagens/bot.png)
 
 4. *Qual User-Agent foi mais comumente usado durante o ataque?*
-- d
+- Usei a mesma query do 3., só desci nas categorias e procurei pelo useragent.
 ![agent](Imagens/agent.png)
 
 5. *Qual foi o maior número de solicitações feitas por segundo durante o ataque?*
-- d
 ![sec](Imagens/sec.png)
 
 6. *Qual endereço IP legítimo recebeu a primeira resposta de status 503 após o ataque?*
-- d
+- **clientip!=** para mostrar users legítimos, **status="503"** pra reduzir noise e **reverse** pra reduzir o tempo de investgação.
 ![503](Imagens/503.png)
