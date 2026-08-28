@@ -36,3 +36,18 @@ Na análise, é importante observar campos como **IP de origem | timestamp | mé
 
 3. Decodificando no CyberChef fica **%' OR '1'='1**.
 ![encoded](Imagens/encoded.png)
+
+---
+
+# Continuando a análise pelo Wireshark
+
+## Desafio do lab
+1. *Qual senha o atacante conseguiu identificar no ataque de brute force?*
+2. *Qual é a flag que o atacante encontrou no banco de dados usando SQLi?*
+---
+1. Query usada *ip.src == 192.168.1.10 and http*
+![senha](Imagens/senha.png)
+
+2. Na mesma query, seguindo o fluxo http onde existe uma codificação.
+![flag](Imagens/flag.png)
+
