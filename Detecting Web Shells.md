@@ -57,7 +57,7 @@ A correlação entre **logs, sistema de arquivos e tráfego de rede** fornece ev
 - Comando usado: **cat access.log | grep wget**
 ![file](Imagens/file.png)
 
-6. *Encontre o segredo que está escondindo junto do web shell*
+6. *Encontre o segredo que está escondido junto do web shell*
 - Comando usado: 1º usei **cat access.log | grep 203.0.113.66 | grep 200** para saber em qual diretório específico o User-Agent mudou.
 ![user](Imagens/user.png)
 
