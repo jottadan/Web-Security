@@ -59,3 +59,12 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 6. *Qual endereço IP legítimo recebeu a primeira resposta de status 503 após o ataque?*
 - **clientip!=** para mostrar somente users legítimos, **status="503"** pra reduzir noise e **reverse** pra reduzir o tempo de investgação.
 ![503](Imagens/503.png)
+
+---
+
+# Prevenções
+Na camada de aplicação, práticas de desenvolvimento seguro, como validação de entrada, evitam requisições capazes de consumir recursos excessivamente. CAPTCHA e JavaScript Challenges ajudam a diferenciar usuários legítimos de bots.
+
+Na infraestrutura, CDNs absorvem e distribuem grande parte do tráfego através de servidores de borda, reduzindo a carga no servidor de origem. WAFs analisam as requisições e podem permitir, desafiar ou bloquear tráfego com base em regras e Threat Intelligence. Rate limiting também pode limitar a quantidade de requisições para endpoints sensíveis.
+
+Atacantes podem tentar bypassar essas defesas utilizando parâmetros aleatórios em URLs para evitar cache, alterando User-Agents e referrers ou distribuindo requisições por diferentes regiões e IPs.
