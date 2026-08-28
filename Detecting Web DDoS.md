@@ -36,3 +36,30 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 3. *Depois do ataque, qual código de erro users legítimos recebem?*
 - Comando usado: **cat access.log | grep -v 203.12.23.195 | grep -v 200 | tail** (mostrar só users legítimos | mostrar status que não seja o normal | mostrar resultados após o ataque)
 ![1](Imagens/1.png)
+
+---
+
+# Continuando pelo Splunk
+1. *Qual foi o URI mais solicitado?*
+- d
+![uri](Imagens/uri.png)
+
+2. *Qual clientip fez o maior número de requisições para o URI de destino?*
+- d
+![ma](Imagens/ma.png)
+
+3. *Quantos endereços IP faziam parte da botnet que atacou o site?*
+- d
+![bot](Imagens/bot.png)
+
+4. *Qual User-Agent foi mais comumente usado durante o ataque?*
+- d
+![agent](Imagens/agent.png)
+
+5. *Qual foi o maior número de solicitações feitas por segundo durante o ataque?*
+- d
+![sec](Imagens/sec.png)
+
+6. *Qual endereço IP legítimo recebeu a primeira resposta de status 503 após o ataque?*
+- d
+![503](Imagens/503.png)
