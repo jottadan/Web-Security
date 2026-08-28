@@ -39,26 +39,26 @@ A correlação entre **logs, sistema de arquivos e tráfego de rede** fornece ev
 # Desafio do lab
 1. *Qual o IP do atacante?*
 - Inevitavelmente haveria erros ao buscar por diversos diretórios, alguns não existindo ou não disponíveis. Sendo assim investiguei o log de erros, achando o IP do atacante.
-![IP](Imagens/IP)
+![IP](Imagens/IP.png)
 
 2. *Qual é o primeiro diretório que o atacante identifica?*
 - Comando usado: **cat access.log | grep 203.0.113.66 | grep 200 | head** (sabendo o IP dá pra reduzir o noise | preciso da tentativa bem sucedida | só preciso do primeiro diretório acessado)
-![200](Imagens/200)
+![200](Imagens/200.png)
 
 3. *Qual o nome do arquivo .php que o atacante usa para fazer o upload do web shell?*
 - Comando usado: **cat access.log | grep upload**
-![php](Imagens/php)
+![php](Imagens/php.png)
 
 4. *Qual é o primeiro comando executado pelo atacante usando o web shell?*
 - Comando usado: **cat access.log | grep 203.0.113.66 | grep cmd** (havia pensado usar comando do 2., mas como foi executado um *comando*, decidi alterar para "grep cmd", o que acelerou a investigação)
-![shell](Imagens/shell)
+![shell](Imagens/shell.png)
 
 5. *Após obter acesso via web shell, o atacante utiliza um comando para baixar um segundo arquivo para o servidor. Qual é o nome desse arquivo?*
 - Comando usado: **cat access.log | grep wget**
-![file](Imagens/file)
+![file](Imagens/file.png)
 
 6. *Encontre o segredo que está escondindo junto do web shell*
 - Comando usado: 1º usei **cat access.log | grep 203.0.113.66 | grep 200** para saber em qual diretório específico o User-Agent mudou.
-![user](Imagens/user)
+![user](Imagens/user.png)
 
 Depois tive que lembrar onde normalmente web shells ficavam guardados e acessei cada arquivo até achar o segredo. 
