@@ -1,5 +1,5 @@
 # Objetivo
-Entender ataques na web e métodos de detecção por meio da análise de logs e tráfego de rede.
+Entender ataques web e métodos de detecção por meio da análise de logs e tráfego de rede.
 
 ---
 
