@@ -30,7 +30,9 @@ Na análise, é importante observar campos como **IP de origem | timestamp | mé
 ---
 1. Nas primeiras linhas do log aparece user-agent **"FFUF v2.1.0"**, pesquisando descobri que é uma ferramenta "fuzzing web de alta velocidade e código aberto".
 ![Fuzzing](Imagens/fuzzing.png)
+
 2. Algumas linhas abaixo se nota diversas requisções GET em **/login**.
-![bruteforce](Imagens/bruteforce.png)
+![brute-force](Imagens/brute-force.png)
+
 3. Decodificando no CyberChef fica **%' OR '1'='1**.
 ![encoded](Imagens/encoded.png)
