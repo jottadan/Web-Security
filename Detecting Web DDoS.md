@@ -27,8 +27,11 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 # Desafio do lab
 1. *Qual o IP do atacante?*
 - ao abrir o access.log se nota diversas requests no mesmo segundo vindo do IP **203.12.23.195.**
+![dos](Imagens/dos.png)
 
 2. *Qual página está sendo alvo de várias requests?*
->
+- **/login**
+![dos](Imagens/dos.png)
 
 3. *Depois do ataque, qual código de erro users legítimos recebem?*
+- 
