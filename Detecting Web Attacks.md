@@ -28,7 +28,7 @@ Na análise, é importante observar campos como **IP de origem | timestamp | mé
 2. *Qual é o nome da página na qual o atacante realiza um ataque de brute force?*
 3. *Qual é o payload SQLi completo e decodificado que o atacante usa no formulário /changeusername.php?*
 ---
-1. Nas primeiras linhas do log aparece user-agent **"FFUF v2.1.0"**, pesquisando descobri que é uma ferramenta "fuzzing web de alta velocidade e código aberto".
+1. Nas primeiras linhas do log aparece User-Agent **"FFUF v2.1.0"**, pesquisando descobri que é uma ferramenta "fuzzing web de alta velocidade e código aberto".
 ![Fuzzing](Imagens/fuzzing.png)
 
 2. Algumas linhas abaixo se nota diversas requisções GET em **/login**.
@@ -51,3 +51,12 @@ Na análise, é importante observar campos como **IP de origem | timestamp | mé
 2. Na mesma query, seguindo o fluxo http onde existe uma codificação.
 ![flag](Imagens/flag.png)
 
+---
+
+# Por fim, WAFs
+
+**Web Application Firewalls (WAFs)** atuam como uma camada de proteção entre os usuários e aplicações web, inspecionando requisições e decidindo se devem ser **permitidas, bloqueadas ou desafiadas**.
+
+WAFs utilizam regras para bloquear padrões de ataques, IPs maliciosos, User-Agents suspeitos e comportamentos abusivos, além de aplicar rate limiting. Também podem usar **Threat Intelligence** para identificar fontes conhecidamente maliciosas.
+
+Em vez de bloquear diretamente uma requisição suspeita, também pode utilizar mecanismos de challenge-response, como CAPTCHA, para diferenciar usuários legítimos de bots.
