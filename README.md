@@ -1,5 +1,5 @@
-# Web-Security
-Exemplos de ataque, contra medidas e investigação auxiliada por labs práticos
+# Objetivo
+Documentar exemplos de ataque, contra medidas e investigações auxiliadas por labs práticos
 
 ---
 
