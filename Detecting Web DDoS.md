@@ -57,5 +57,5 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 ![sec](Imagens/sec.png)
 
 6. *Qual endereço IP legítimo recebeu a primeira resposta de status 503 após o ataque?*
-- **clientip!=** para mostrar users legítimos, **status="503"** pra reduzir noise e **reverse** pra reduzir o tempo de investgação.
+- **clientip!=** para mostrar somente users legítimos, **status="503"** pra reduzir noise e **reverse** pra reduzir o tempo de investgação.
 ![503](Imagens/503.png)
