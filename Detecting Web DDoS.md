@@ -35,4 +35,4 @@ A investigação dos logs envolve identificar padrões anormais de requisições
 
 3. *Depois do ataque, qual código de erro users legítimos recebem?*
 - Comando usado: **cat access.log | grep -v 203.12.23.195 | grep -v 200 | tail** (mostrar só users legítimos | mostrar status que não seja o normal | mostrar resultados após o ataque)
-![users](Imagens/users.png)
+![1](Imagens/1.png)
