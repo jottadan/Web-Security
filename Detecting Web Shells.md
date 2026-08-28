@@ -50,7 +50,7 @@ A correlação entre **logs, sistema de arquivos e tráfego de rede** fornece ev
 ![php](Imagens/php.png)
 
 4. *Qual é o primeiro comando executado pelo atacante usando o web shell?*
-- Comando usado: **cat access.log | grep 203.0.113.66 | grep cmd** (havia pensado usar comando do 2., mas como foi executado um *comando*, decidi alterar para "grep cmd", o que acelerou a investigação)
+- Comando usado: **cat access.log | grep 203.0.113.66 | grep cmd** (havia pensado em usar o comando do 2., mas como foi executado um *comando*, decidi alterar para "grep cmd", o que acelerou a investigação)
 ![shell](Imagens/shell.png)
 
 5. *Após obter acesso via web shell, o atacante utiliza um comando para baixar um segundo arquivo para o servidor. Qual é o nome desse arquivo?*
