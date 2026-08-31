@@ -1,5 +1,5 @@
 # Objetivo
-Documentar exemplos de ataque, contra medidas e investigações auxiliadas por labs práticos
+Documentar exemplos de ataque, contra medidas e investigação de logs por meio do Shell, Splunk e Wireshark, auxiliado por labs práticos.
 
 ---
 
